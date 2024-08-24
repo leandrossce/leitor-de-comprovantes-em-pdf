@@ -24,7 +24,7 @@ Python 3.x
 
 Bibliotecas Python:
 
-openai
+openai ( use: pip install openai==0.27.6)
 pdfplumber
 pandas
 tkinter
