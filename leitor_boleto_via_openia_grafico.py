@@ -18,7 +18,7 @@ model_engine = "gpt-4o-mini"
 
 def extract_data_and_save_to_excel(pdf_path, excel_path):
     responses = []
-    contador = 0 
+    #contador = 0 
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
@@ -54,11 +54,11 @@ def extract_data_and_save_to_excel(pdf_path, excel_path):
             }
             
             responses.append(response_dict)
-            contador = contador +1
+            #contador = contador +1
 
-            if contador ==3:
-                contador=0
-                break
+            #if contador ==3:
+                #contador=0
+                #break
             #             
             # Atualizar a label com o nome do fornecedor
             supplier_name = response_dict["FORNECEDORES"]
